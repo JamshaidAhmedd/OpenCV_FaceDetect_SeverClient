@@ -1,3 +1,4 @@
+
 # Face Detection Server and Client - CSSE2310 Assignment 4
 
 ![Awesome Badge](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) <a href="https://arbeitnow.com/?utm_source=awesome-github-profile-readme"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=arbeitnow&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
@@ -51,11 +52,13 @@ libjpeg-dev libpng-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev
    ```bash
    git clone https://github.com/yourusername/OpenCV_FaceDetect_SeverClient.git
    ```
+
 2. Create a build directory:
 
    ```bash
    mkdir build && cd build
    ```
+
 3. Run CMake and compile the project:
 
    ```bash
@@ -97,7 +100,7 @@ To run the client for face replacement:
 ./uqfaceclient 2310 --detect group.jpg --replacefilename overlay.png --outputimage out.jpg
 ```
 
-### Project Structure
+## Project Structure
 
 ```
 face_detect_project/
@@ -110,7 +113,7 @@ face_detect_project/
     └── uqfaceclient.cpp  # Client implementation
 ```
 
-### Protocol Details
+## Protocol Details
 
 The communication between the server and client follows a custom binary protocol. Each message consists of the following parts:
 
@@ -126,7 +129,7 @@ The communication between the server and client follows a custom binary protocol
 
 The protocol ensures reliable transmission of all data and error handling via `send_all()` and `recv_all()` functions.
 
-### Client Usage
+## Client Usage
 
 To use the client, run the following command:
 
@@ -138,16 +141,33 @@ To use the client, run the following command:
 * **--replacefilename**: Specifies the image for face replacement.
 * **--outputimage**: Specifies the output filename.
 
-### Server Usage
+## Server Usage
 
 The server listens for incoming connections on the specified port. It handles face detection or replacement requests based on the operation code. It also prints statistics when the `SIGHUP` signal is sent to it.
 
-### Contributing
+## Example Images
+
+### Face Detection Example
+
+Here is an example of a face detection input image:
+![Face Detection Example](src/face.jpg)
+
+This image is processed by the server to detect faces and eyes, and results are returned to the client.
+
+### Face Replacement Example
+
+In this example, the detected faces are replaced with another image (e.g., `overlay.png`):
+![Face Replacement Example](src/overlay.png)
+
+### Results
+
+The results of face detection or replacement are saved and returned, such as:
+![Result Image](src/result.jpg)
+
+## Contributing
 
 Contributions are always welcome! Feel free to open issues, fork the repository, and submit pull requests. Ensure your code adheres to the existing style and includes adequate comments.
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
