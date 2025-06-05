@@ -1,0 +1,4 @@
+/home/jamshaid/Shanza/face_detect_project/src/CMakeFiles/uqfacedetect.dir
+/home/jamshaid/Shanza/face_detect_project/src/CMakeFiles/uqfaceclient.dir
+/home/jamshaid/Shanza/face_detect_project/src/CMakeFiles/edit_cache.dir
+/home/jamshaid/Shanza/face_detect_project/src/CMakeFiles/rebuild_cache.dir
