@@ -1,5 +1,5 @@
 
-# Face Detection Server and Client - CSSE2310 Assignment 4
+# Face Detection Server and Client
 
 ![Awesome Badge](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) <a href="https://arbeitnow.com/?utm_source=awesome-github-profile-readme"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=arbeitnow&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
 
@@ -13,6 +13,7 @@
 * [Protocol Details](#protocol-details)
 * [Client Usage](#client-usage)
 * [Server Usage](#server-usage)
+* [Example Images](#example-images)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -156,8 +157,8 @@ This image is processed by the server to detect faces and eyes, and results are 
 
 ### Face Replacement Example
 
-In this example, the detected faces are replaced with another image (e.g., `overlay.png`):
-![Face Replacement Example](src/overlay.png)
+In this example, the detected faces are replaced with another image:
+![Face Replacement Example](src/out.jpg)
 
 ### Results
 
